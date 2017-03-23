@@ -48,7 +48,7 @@ class MkdirThread implements Runnable {
         fs.delete(new Path(finalPath), true);
       }
     } catch (java.io.IOException e) {
-      System.err.println("di** just happened. You heard me. That's all you get");
+      System.err.println("Error occured during HDFS I/O");
 			System.exit(1);
     }
   }
